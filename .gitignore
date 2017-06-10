@@ -4,3 +4,8 @@ Homestead.json
 Homestead.yaml
 .env
 !tests/.env
+
+### Vim ###
+*~
+*.swp
+
