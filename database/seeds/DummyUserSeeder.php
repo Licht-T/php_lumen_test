@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
-class DatabaseSeeder extends Seeder
+class DummyUserSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,7 +12,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call('UsersTableSeeder');
-        $this->call('DummyUserSeeder');
+        DB::table('user')->insert([
+            'login_id' => 'test',
+            'password' => 'test',
+        ]);
     }
 }
